@@ -46,19 +46,11 @@ You should now see the Windows desktop for your EC2 instance.
 <img width="1800" height="880" alt="Windows desktop screenshot" src="https://github.com/user-attachments/assets/6fb38685-81d6-42bc-9ea5-4d1322dcbe9b" />
 
 ---
+## Results
+A Windows Server EC2 instance was launched and accessed via RDP using the decrypted Administrator credentials.
 
-## Verification
-- Confirm you can interact with the desktop and open applications.
-- Verify network connectivity (e.g., open a browser and browse a test page).
-- Check Windows Event Viewer if any errors occur during login.
+## Notes
+Restrict RDP access to specific IPs and consider using Systems Manager, a VPN, or a bastion host instead of exposing RDP publicly. Store private keys securely—AWS cannot recover lost keys.
 
----
-
-## Cleanup
-To avoid unexpected charges:
-- Stop the instance if you want to preserve the VM and restart later (note: stopping and restarting can change the public IP unless you use an Elastic IP).
-- Terminate the instance to delete it permanently and remove associated resources.
-- Remove unused security groups and key pairs if they are no longer needed.
-
-
----
+Cleanup
+- Stop or terminate the EC2 instance when finished to avoid charges.
