@@ -26,8 +26,6 @@ This lab shows how to launch a basic Windows Server virtual machine (VM) on Amaz
    - Storage: Leave defaults or adjust as needed.
    - Security group: Create or select a security group that allows RDP (TCP 3389) inbound from your IP address only.
 
-Notes:
-- Restrict RDP access to your IP or your organization's IP range — do not allow 0.0.0.0/0 for RDP in production environments.
 
 <img width="1720" height="800" alt="EC2 launch screenshot" src="https://github.com/user-attachments/assets/2b45d0f6-ad6e-4941-9413-b3cd3e16aafc" />
 
@@ -70,15 +68,5 @@ To avoid unexpected charges:
 - Terminate the instance to delete it permanently and remove associated resources.
 - Remove unused security groups and key pairs if they are no longer needed.
 
----
-
-## Troubleshooting
-- If RDP times out:
-  - Ensure the instance is running and status checks passed.
-  - Check the security group allows inbound TCP 3389 from your current public IP.
-  - Verify the instance has a public IP (unless you are connecting through a VPN/ bastion host).
-- If you cannot decrypt the password:
-  - Make sure you are using the correct private key that pairs with the instance key pair.
-  - Ensure the private key file permissions are correct and the key file is not corrupted.
 
 ---
