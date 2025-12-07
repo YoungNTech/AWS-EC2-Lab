@@ -1,16 +1,8 @@
 # AWS EC2 Windows VM Lab
 
 ## Overview
-This lab shows how to launch a basic Windows Server virtual machine (VM) on Amazon EC2 and connect to it via Remote Desktop (RDP). 
+This lab shows how to launch a basic Windows Server virtual machine (VM) on Amazon EC2 and connect to it via Remote Desktop (RDP)
 
-- Estimated time: 10–20 minutes
-- Cost: Uses a t2.micro instance; stop or terminate the instance after the lab to avoid charges
-- Goal: Launch a Windows Server instance, retrieve the Administrator password, and connect with RDP
-
-## Prerequisites
-- An AWS account with permissions to create EC2 instances, key pairs, and security groups
-- A local machine with an RDP client (Remote Desktop Connection on Windows, Microsoft Remote Desktop on macOS)
-- Your private key (.pem) file for the EC2 key pair (saved securely and accessible)
 
 ---
 
